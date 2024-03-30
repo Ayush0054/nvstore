@@ -4,7 +4,7 @@ FROM python:latest
 
 WORKDIR  /VectorStore
 
-COPY  /VectorStore/vector store
+COPY  . /VectorStore 
 
 # Install dependencies
 RUN pip install --upgrade pip && \
